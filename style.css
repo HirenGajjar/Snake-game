@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    color: black;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    background-color: #d9d9d9;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameboard {
+    display: grid;
+    border: 2px solid black;
+    grid-template-rows: repeat(20, 20px);
+    grid-template-columns: repeat(20, 20px);
+    margin: 5px;
+}
+
+.snake {
+    border: black 10px solid;
+}
+
+.food {
+    background-color: green;
+    border: green 5px solid;
+}
